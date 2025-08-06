@@ -423,6 +423,26 @@
               <FileType>5</FileType>
               <FilePath>..\Drivers\adc.h</FilePath>
             </File>
+            <File>
+              <FileName>tim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>tim.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\tim.h</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Drivers\usart.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

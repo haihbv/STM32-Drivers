@@ -2,38 +2,19 @@
 #include "systick.h"
 #include "gpio.h"
 #include "adc.h"
+#include "tim.h"
 
-static uint16_t value;
 int main()
 {
 	Systick_Init();
-	ADC_Config();
-	GPIOx_Init(GPIOA, GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6, GPIO_Mode_Out_PP, GPIO_Speed_50MHz);
+	GPIOx_Init(GPIOA, GPIO_Pin_8 | GPIO_Pin_0, GPIO_Mode_AF_PP, GPIO_Speed_50MHz);
+	
+	TIM1_PWM_Servo_Init();
+	TIM2_PWM_Servo_Init();
+	
 	while (1)
 	{
-		value = ADC_Read();
-		if (value < 512)
-		{
-			GPIO_WriteBit(GPIOA, GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6, Bit_SET);
-		}
-		else if (value < 1024)
-		{
-			GPIO_WriteBit(GPIOA, GPIO_Pin_4, Bit_RESET);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_5 | GPIO_Pin_6, Bit_SET);
-		}
-		else if (value < 2048)
-		{
-			GPIO_WriteBit(GPIOA, GPIO_Pin_4 | GPIO_Pin_5, Bit_RESET);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_6, Bit_SET);
-		}
-		else if (value < 3072)
-		{
-			GPIO_WriteBit(GPIOA, GPIO_Pin_5 | GPIO_Pin_6, Bit_RESET);
-			GPIO_WriteBit(GPIOA, GPIO_Pin_4, Bit_SET);
-		}
-		else 
-		{
-			GPIO_WriteBit(GPIOA, GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6, Bit_RESET);
-		}
+		Servo_SweepAngle(TIM2, 0,   180, 10, 300);
+		Servo_SweepAngle(TIM2, 180, 0,   10, 300);
 	}
 }
