@@ -9,7 +9,10 @@ extern "C" {
 #include "stm32f10x_spi.h"              // Keil::Device:StdPeriph Drivers:SPI
 
 void SPI_Config(void);
-void SPI_Send_Data_Command(uint8_t data);
+
+
+void SPIx_Init(SPI_TypeDef* SPIx);
+void SPI_Send_Data_Command(SPI_TypeDef* SPIx, uint8_t data);
 
 #ifdef __cplusplus
 }

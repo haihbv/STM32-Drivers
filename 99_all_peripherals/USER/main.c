@@ -10,10 +10,10 @@
 int main()
 {
 	Systick_Init();
-	SPI_Config();
+	SPIx_Init(SPI1);
 	while (1)
 	{
-		SPI_Send_Data_Command(0xA5);
+		SPI_Send_Data_Command(SPI1, 0xA3);
 		delay_ms(1000);
 	}
 }
