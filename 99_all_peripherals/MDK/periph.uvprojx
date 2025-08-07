@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\Drivers</IncludePath>
+              <IncludePath>..\Drivers;..\Printf</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -442,6 +442,21 @@
               <FileName>usart.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Drivers\usart.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>printf</GroupName>
+          <Files>
+            <File>
+              <FileName>printf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Printf\printf.c</FilePath>
+            </File>
+            <File>
+              <FileName>printf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Printf\printf.h</FilePath>
             </File>
           </Files>
         </Group>
