@@ -5,6 +5,7 @@
 ".\objects\adc.o"
 ".\objects\tim.o"
 ".\objects\usart.o"
+".\objects\spi.o"
 ".\objects\printf.o"
 ".\objects\misc.o"
 ".\objects\stm32f10x_adc.o"

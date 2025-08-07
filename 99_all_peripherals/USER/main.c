@@ -5,15 +5,15 @@
 #include "tim.h"
 #include "usart.h"
 #include "printf.h"
+#include "spi.h"
 
 int main()
 {
 	Systick_Init();
-	USARTx_Init(USART1, USART_BAUDRATE_9600);
-	
+	SPI_Config();
 	while (1)
 	{
-		print(USART1, "Hello Word!\n");
-		delay_ms(5000);
+		SPI_Send_Data_Command(0xA5);
+		delay_ms(1000);
 	}
 }
