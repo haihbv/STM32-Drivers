@@ -16,6 +16,7 @@ void TIM1_PWM_Servo_Init(void);
 // TIM2
 void TIM2_Config(void);
 void delay_tim2_ms(uint32_t ms);
+void delay_us(uint32_t us);
 void TIM2_IRQHandler(void);
 void TIM2_PWM_Servo_Init(void);
 

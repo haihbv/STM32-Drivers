@@ -26,6 +26,12 @@ void delay_tim3_ms(uint32_t ms)
 	}
 }
 
+void delay_us(uint32_t us)
+{
+	TIM3->CNT = 0;
+	while (TIM3->CNT < us);
+}
+
 void TIM2_Config(void)
 {
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
@@ -54,6 +60,7 @@ void delay_tim2_ms(uint32_t ms)
 	time_out = ms;
 	while (time_out);
 }
+
 void TIM2_IRQHandler(void)
 {
 	if (TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
