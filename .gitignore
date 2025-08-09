@@ -1,0 +1,49 @@
+# ===== STM32 / Keil uVision build artifacts =====
+# Build output directories
+**/Objects/
+**/Listings/
+**/DebugConfig/
+
+# Keil uVision user / session files
+*.uvguix.*
+*.uvoptx
+*.uvprojx.bak
+
+# Output / intermediate files
+*.axf
+*.map
+*.htm
+*.html
+*.o
+*.d
+*.dep
+*.lnp
+*.sct
+*.crf
+*.lst
+*.iex
+*.bak
+*.scvd
+*.hex
+*.bin
+
+# Generated dependency markers
+*_Target*dep
+*_hbv.dep
+*_dev.dep
+*_rgb.dep
+*_timer.dep
+*_adc.dep
+*_usart.dep
+*_i2c.dep
+
+# VSCode / editor
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: keep project & source files
+# (Do NOT ignore: *.uvprojx, /RTE/, /USER/, /Src/, /src/)
