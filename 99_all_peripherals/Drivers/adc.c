@@ -63,6 +63,7 @@ void ADC_Multi_Channel_Config(void)
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_0, 1, ADC_SampleTime_71Cycles5);
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_1, 2, ADC_SampleTime_71Cycles5);
 	ADC_RegularChannelConfig(ADC1, ADC_Channel_2, 3, ADC_SampleTime_71Cycles5);
+	ADC_RegularChannelConfig(ADC1, ADC_Channel_3, 4, ADC_SampleTime_71Cycles5);
 	
 	ADC_Cmd(ADC1, ENABLE);
 	delay_ms(1);
@@ -89,5 +90,7 @@ void ADC_Multi_Channel_Read(void)
 	adc_ch0_value = ADC_ReadChannel(ADC_Channel_0);
   adc_ch1_value = ADC_ReadChannel(ADC_Channel_1);
   adc_ch2_value = ADC_ReadChannel(ADC_Channel_2);
+	adc_ch3_value = ADC_ReadChannel(ADC_Channel_3);
+	
 }
 

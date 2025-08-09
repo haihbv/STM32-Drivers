@@ -10,6 +10,7 @@ extern "C" {
 extern uint16_t adc_ch0_value;
 extern uint16_t adc_ch1_value;
 extern uint16_t adc_ch2_value;
+extern uint16_t adc_ch3_value;
 
 void ADC_Config(void);
 uint16_t ADC_Read(void);

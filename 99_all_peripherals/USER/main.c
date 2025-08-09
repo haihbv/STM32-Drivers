@@ -11,6 +11,7 @@
 uint16_t adc_ch0_value = 0;
 uint16_t adc_ch1_value = 0;
 uint16_t adc_ch2_value = 0;
+uint16_t adc_ch3_value = 0;
 
 int main(void)
 {

@@ -1,6 +1,6 @@
 Dependencies for Project 'periph', Target 'periph': (DO NOT MODIFY !)
 CompilerVersion: 6140000::V6.14::ARMCLANG
-F (..\USER\main.c)(0x6896AC14)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Drivers -I ../Printf-I./RTE/Device/STM32F103C8-I./RTE/_periph-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
+F (..\USER\main.c)(0x6896C76D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Drivers -I ../Printf-I./RTE/Device/STM32F103C8-I./RTE/_periph-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
 I (RTE\_periph\RTE_Components.h)(0x68922D9E)
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm3.h)(0x6851FB20)
@@ -23,7 +23,7 @@ I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\misc.h)(0x61AD876E)
 I (..\Drivers\systick.h)(0x6892391C)
 I (..\Drivers\gpio.h)(0x689247B5)
-I (..\Drivers\adc.h)(0x6896AD24)
+I (..\Drivers\adc.h)(0x6896C76E)
 I (..\Drivers\tim.h)(0x6895A5B7)
 I (..\Drivers\usart.h)(0x6893FCEF)
 I (..\Printf\printf.h)(0x689407D8)
@@ -77,8 +77,8 @@ I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\misc.h)(0x61AD876E)
 I (..\Drivers\systick.h)(0x6892391C)
 F (..\Drivers\gpio.h)(0x689247B5)()
-F (..\Drivers\adc.c)(0x6896ADAD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Drivers -I ../Printf-I./RTE/Device/STM32F103C8-I./RTE/_periph-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/adc.o -MD)
-I (..\Drivers\adc.h)(0x6896AD24)
+F (..\Drivers\adc.c)(0x6896C76E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Drivers -I ../Printf-I./RTE/Device/STM32F103C8-I./RTE/_periph-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/adc.o -MD)
+I (..\Drivers\adc.h)(0x6896C76E)
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
 I (RTE\_periph\RTE_Components.h)(0x68922D9E)
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\ARM\CMSIS\6.2.0\CMSIS\Core\Include\core_cm3.h)(0x6851FB20)
@@ -100,7 +100,7 @@ I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_usart.h)(0x688BEDCA)
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\misc.h)(0x61AD876E)
 I (..\Drivers\systick.h)(0x6892391C)
-F (..\Drivers\adc.h)(0x6896AD24)()
+F (..\Drivers\adc.h)(0x6896C76E)()
 F (..\Drivers\tim.c)(0x6895A5B7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Drivers -I ../Printf-I./RTE/Device/STM32F103C8-I./RTE/_periph-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-IC:/Users/Adminstrator/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/StdPeriph_Driver/inc-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/tim.o -MD)
 I (..\Drivers\tim.h)(0x6895A5B7)
 I (C:\Users\Adminstrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h)(0x61AD876E)
