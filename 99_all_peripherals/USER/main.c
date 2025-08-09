@@ -8,13 +8,17 @@
 #include "spi.h"
 #include "i2c.h"
 
+uint16_t adc_ch0_value = 0;
+uint16_t adc_ch1_value = 0;
+uint16_t adc_ch2_value = 0;
+
 int main(void)
 {
 	Systick_Init();
-	I2C_Config(I2C1);
+	ADC_Multi_Channel_Config();
 	while (1)
 	{
-		I2C_Write_Data(I2C1, I2C_SLAVE_ADDR, 0x11);
+		ADC_Multi_Channel_Read();
 		delay_ms(1000);
 	}
 }
