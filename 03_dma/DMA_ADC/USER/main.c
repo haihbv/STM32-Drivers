@@ -8,7 +8,7 @@ int main()
 {
 	SystemInit();
 	ADC1_DMA_Init();
-	
+
 	while (1)
 	{
 		
